@@ -1,0 +1,272 @@
+EESchema Schematic File Version 2
+LIBS:74xx
+LIBS:atmel
+LIBS:linear
+LIBS:motors
+LIBS:power
+LIBS:relays
+LIBS:references
+LIBS:device
+LIBS:graphic
+LIBS:interface
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATMEGA328-PU U?
+U 1 1 5A0CD584
+P 2500 3650
+F 0 "U?" H 1750 4900 50  0000 L BNN
+F 1 "ATMEGA328-PU" H 2900 2250 50  0000 L BNN
+F 2 "DIL28" H 2500 3650 50  0001 C CIN
+F 3 "" H 2500 3650 50  0001 C CNN
+	1    2500 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Fan_3pin M?
+U 1 1 5A0CD7A7
+P 8000 3550
+F 0 "M?" H 8100 3650 50  0000 L CNN
+F 1 "Fan_3pin" H 8100 3350 50  0000 L TNN
+F 2 "" H 8000 3460 50  0001 C CNN
+F 3 "" H 8000 3460 50  0001 C CNN
+	1    8000 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 5A0CD815
+P 8000 3200
+F 0 "#PWR?" H 8000 3050 50  0001 C CNN
+F 1 "+12V" H 8000 3340 50  0000 C CNN
+F 2 "" H 8000 3200 50  0001 C CNN
+F 3 "" H 8000 3200 50  0001 C CNN
+	1    8000 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A0CD8B9
+P 7900 4800
+F 0 "#PWR?" H 7900 4550 50  0001 C CNN
+F 1 "GND" H 7900 4650 50  0000 C CNN
+F 2 "" H 7900 4800 50  0001 C CNN
+F 3 "" H 7900 4800 50  0001 C CNN
+	1    7900 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A0CD8E1
+P 1550 4950
+F 0 "#PWR?" H 1550 4700 50  0001 C CNN
+F 1 "GND" H 1550 4800 50  0000 C CNN
+F 2 "" H 1550 4950 50  0001 C CNN
+F 3 "" H 1550 4950 50  0001 C CNN
+	1    1550 4950
+	1    0    0    -1  
+$EndComp
+Text GLabel 4150 4150 2    60   Input ~ 0
+RPi-RX
+Text GLabel 4150 4250 2    60   Input ~ 0
+RPi-TX
+$Comp
+L FINDER-36.11-4301 RL?
+U 1 1 5A0CD984
+P 7700 4250
+F 0 "RL?" H 8150 4400 50  0000 L CNN
+F 1 "FINDER-36.11-4301" H 8150 4300 50  0000 L CNN
+F 2 "" H 7700 4250 50  0001 C CNN
+F 3 "" H 7700 4250 50  0001 C CNN
+	1    7700 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A0CDC56
+P 7500 4800
+F 0 "#PWR?" H 7500 4550 50  0001 C CNN
+F 1 "GND" H 7500 4650 50  0000 C CNN
+F 2 "" H 7500 4800 50  0001 C CNN
+F 3 "" H 7500 4800 50  0001 C CNN
+	1    7500 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 5A0CDE26
+P 1600 2450
+F 0 "#PWR?" H 1600 2300 50  0001 C CNN
+F 1 "+5V" H 1600 2590 50  0000 C CNN
+F 2 "" H 1600 2450 50  0001 C CNN
+F 3 "" H 1600 2450 50  0001 C CNN
+	1    1600 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10K
+U 1 1 5A0CDECC
+P 6300 4650
+F 0 "R10K" V 6380 4650 50  0000 C CNN
+F 1 "R" V 6300 4650 50  0000 C CNN
+F 2 "" V 6230 4650 50  0001 C CNN
+F 3 "" H 6300 4650 50  0001 C CNN
+	1    6300 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A0CE07B
+P 6300 4900
+F 0 "#PWR?" H 6300 4650 50  0001 C CNN
+F 1 "GND" H 6300 4750 50  0000 C CNN
+F 2 "" H 6300 4900 50  0001 C CNN
+F 3 "" H 6300 4900 50  0001 C CNN
+	1    6300 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 5A0CE09A
+P 6300 2900
+F 0 "#PWR?" H 6300 2750 50  0001 C CNN
+F 1 "+5V" H 6300 3040 50  0000 C CNN
+F 2 "" H 6300 2900 50  0001 C CNN
+F 3 "" H 6300 2900 50  0001 C CNN
+	1    6300 2900
+	1    0    0    -1  
+$EndComp
+Text Notes 10800 3550 2    60   ~ 0
+moteur (ventilateur) desaxé pour gerener les secousses\n
+Text GLabel 7200 3950 0    60   Input ~ 0
+Motor
+$Comp
+L DIAMOND3 U?
+U 1 1 5A0CE217
+P 4900 2400
+F 0 "U?" H 4950 2450 50  0001 C CNN
+F 1 "Piece (good)" H 4900 2300 50  0000 C CNN
+F 2 "" H 4900 2400 60  0001 C CNN
+F 3 "" H 4900 2400 60  0001 C CNN
+	1    4900 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIAMOND3 U?
+U 1 1 5A0CE291
+P 5500 2400
+F 0 "U?" H 5550 2450 50  0001 C CNN
+F 1 "Piece (bad)" H 5500 2300 50  0000 C CNN
+F 2 "" H 5500 2400 60  0001 C CNN
+F 3 "" H 5500 2400 60  0001 C CNN
+	1    5500 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10K?
+U 1 1 5A0CE30E
+P 4900 2400
+F 0 "R10K?" V 4980 2400 50  0000 C CNN
+F 1 "R" V 4900 2400 50  0000 C CNN
+F 2 "" V 4830 2400 50  0001 C CNN
+F 3 "" H 4900 2400 50  0001 C CNN
+	1    4900 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIAMOND3 U?
+U 1 1 5A0CE47D
+P 6300 4100
+F 0 "U?" H 6350 4150 50  0001 C CNN
+F 1 "Piece (hole)" H 6300 4000 50  0000 C CNN
+F 2 "" H 6300 4100 60  0001 C CNN
+F 3 "" H 6300 4100 60  0001 C CNN
+	1    6300 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIAMOND3 U?
+U 1 1 5A0CE5A0
+P 6300 3650
+F 0 "U?" H 6350 3700 50  0001 C CNN
+F 1 "Piece (hole)" H 6300 3550 50  0000 C CNN
+F 2 "" H 6300 3650 60  0001 C CNN
+F 3 "" H 6300 3650 60  0001 C CNN
+	1    6300 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIAMOND3 U?
+U 1 1 5A0CE5BA
+P 6300 3200
+F 0 "U?" H 6350 3250 50  0001 C CNN
+F 1 "Piece (hole)" H 6300 3100 50  0000 C CNN
+F 2 "" H 6300 3200 60  0001 C CNN
+F 3 "" H 6300 3200 60  0001 C CNN
+	1    6300 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel 3850 3600 2    60   Input ~ 0
+key
+Text GLabel 3900 2550 2    60   Input ~ 0
+Motor
+Text GLabel 5850 4500 0    60   Input ~ 0
+key
+Wire Wire Line
+	8000 3200 8000 3350
+Wire Wire Line
+	1600 4850 1550 4850
+Wire Wire Line
+	1550 4750 1550 4950
+Wire Wire Line
+	1600 4750 1550 4750
+Connection ~ 1550 4850
+Wire Wire Line
+	3500 4150 4150 4150
+Wire Wire Line
+	3500 4250 4150 4250
+Wire Wire Line
+	8000 3850 8000 3950
+Wire Wire Line
+	7900 4800 7900 4550
+Wire Wire Line
+	7500 4550 7500 4800
+Wire Wire Line
+	7500 3950 7200 3950
+Wire Wire Line
+	1600 2450 1600 2550
+Wire Wire Line
+	6300 4500 5850 4500
+Wire Wire Line
+	6300 4800 6300 4900
+Wire Wire Line
+	6300 4500 6300 4300
+Wire Wire Line
+	6300 2900 6300 3000
+Wire Wire Line
+	4900 2250 4900 2150
+Wire Wire Line
+	4900 2550 4900 2650
+Wire Wire Line
+	5500 2100 5500 2650
+Wire Wire Line
+	6300 3400 6300 3450
+Wire Wire Line
+	6300 3850 6300 3900
+Wire Wire Line
+	3500 3600 3850 3600
+Wire Wire Line
+	3500 2550 3900 2550
+$EndSCHEMATC
