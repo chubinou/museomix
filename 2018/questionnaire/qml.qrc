@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Question.qml</file>
+        <file>Response.qml</file>
+        <file>Accueil.qml</file>
+        <file>Booth.qml</file>
+        <file>PushButton.qml</file>
+        <file>TakeCoiffe.qml</file>
+        <file>Thanks.qml</file>
+        <file>Leira-Lite.ttf</file>
+        <file>Faune-TextRegular.otf</file>
+        <file>TitleText.qml</file>
+        <file>BodyText.qml</file>
+        <file>FicheInfo.qml</file>
+        <file>QuestionCtx.qml</file>
+        <file>SuiteButton.qml</file>
+        <file>TextCoiffe.qml</file>
+        <file>PresentationPhoto.qml</file>
+        <file>TakeCoiffeWeak.qml</file>
+    </qresource>
+</RCC>
